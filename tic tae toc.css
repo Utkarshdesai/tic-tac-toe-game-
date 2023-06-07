@@ -1,0 +1,160 @@
+*{
+    padding: 0;
+    margin: 0; 
+    box-sizing: border-box;
+}
+.wrapper{
+    width:100vw;
+    height:100vh;
+   display:flex;
+   justify-content:baseline;
+   align-items: center;
+    background-image: linear-gradient(to right, #DECBA4, #3E5151);
+    font-family: sans-serif;
+    flex-direction: column;
+}
+
+.current-player{
+    background-color: rgba(255, 255, 255, .25);
+    border: 1px solid rgba(255, 255, 255, .15);;
+     text-align: center;
+        border-radius: 5px;
+        padding: 1rem; 
+        color: white;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        
+    }
+
+   #box1,#box4,#box2,#box5 
+   {
+        border-right: 2px solid white;
+        border-bottom: 2px solid white;
+        border-radius: 2px solid white;
+   }
+
+   #box3,#box6 
+   {
+    border-bottom: 2px solid white;
+   }
+
+   #box7, #box8 
+   {
+    border-right: 2px solid white;
+   }
+
+.game-container{
+background-color: rgba(255, 255, 255, .25);
+ display: grid;
+ grid-template-rows: 1fr 1fr 1fr;
+ grid-template-columns: 1fr 1fr 1fr ;
+ width:25%;
+ height: 35%;
+ grid-template-areas: "a b c" 
+ "d e f"
+ "g h i"; 
+ padding: 1rem;
+ border: 1px solid rgba(255, 255, 255, .15);;
+}
+.box{
+    cursor: pointer;
+    font-size: 3rem;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+ #box1 
+{ 
+ 
+  grid-area: a;
+}
+#box2{
+    grid-area: b;
+}
+#box3
+{
+    grid-area: c;
+}
+#box4
+{
+    grid-area: d;
+}
+#box5
+{
+    grid-area: e;
+}
+#box6{
+    grid-area: f;
+}
+#box7
+{
+    grid-area: g;
+}
+#box8
+{
+    grid-area: h;
+}
+#box9{
+    grid-area: i;
+} 
+
+
+#box1,#box4,#box2,#box5 
+{
+     border-right: 2px solid white;
+     border-bottom: 2px solid white;
+     border-radius: 2px solid white;
+}
+
+#box3,#box6 
+{
+ border-bottom: 2px solid white;
+}
+
+#box7, #box8 
+{
+ border-right: 2px solid white;
+}
+
+
+
+.new-game{
+    background-color: rgba(255, 255, 255, .25);
+    text-align: center;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    border: 1px solid rgba(255, 255, 255, .15);
+    color: white;
+    cursor: pointer;
+    margin-top: 4rem;
+    display: none;
+
+}
+.addbutt {
+display: flex;
+}
+.win {
+    background-color: green;
+}
+
+.scorecard{
+    background-color: rgba(255, 255, 255, .25);
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    border: 1px solid rgba(255, 255, 255, .15);
+    margin-right: 5%;
+    margin-left: 85%;
+    justify-content: baseline;
+    margin-top: 0;
+    width:10%;
+
+}
+.x{
+    margin: 0.3rem;
+}
+.zero{
+    margin: 0.3rem;
+}
